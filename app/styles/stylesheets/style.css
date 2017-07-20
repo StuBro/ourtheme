@@ -1,0 +1,24 @@
+/*
+Theme name : Our Theme
+Author : Khalil khassep
+Version: 1.0
+
+*/
+.default-dir {
+  float: left;
+}
+
+.inverts-dir {
+  float: right;
+}
+
+/*
+Theme name : Our Theme
+Author : Khalil khassep
+Version: 1.0
+
+*/
+.left {
+  padding-left: 1px;
+  padding-right: 1px;
+}

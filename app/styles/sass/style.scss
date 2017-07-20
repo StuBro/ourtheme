@@ -1,0 +1,21 @@
+
+/*
+Theme name : Our Theme
+Author : Khalil khassep
+Version: 1.0
+
+*/
+$dir:ltr;
+
+
+$default-dir:left;
+$inverts-dir:right;
+.default-dir{
+  float: left;
+}
+
+.inverts-dir{
+  float: right;
+}
+
+@import "main";
