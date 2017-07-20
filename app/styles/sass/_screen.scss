@@ -4,3 +4,27 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+/*
+Theme name : Our Theme
+Author : Khalil khassep
+Version: 1.0
+
+*/
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+ 
+.container{
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+
+@import "partila/all";

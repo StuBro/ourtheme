@@ -13,7 +13,12 @@ function kh_add_scripts()
 
 }
 
+function kh_add_styles() {
+    wp_enqueue_style('kh_style_css',get_template_directory_uri().'/style.css');
+}
+
 add_action('wp_enqueue_scripts', 'kh_add_scripts');
+add_action('wp_enqueue_scripts', 'kh_add_styles');
 
 
 // function affter theme setup lunch these functions
@@ -41,5 +46,15 @@ function kh_theme_setup()
 
 
 add_action('after_setup_theme', 'kh_theme_setup');
+
+//Regsiter navegation menus @khalil khaseep
+
+function kh_reg_menus(){
+
+    register_nav_menus([
+      'header-menu'=>__('Header Menu')
+    ]);
+}
+add_action('init','kh_reg_menus');
 
 ?>

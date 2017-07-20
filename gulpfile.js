@@ -38,3 +38,9 @@ gulp.task('compass',function () {
         .pipe(minifyCss())
         .pipe(gulp.dest(''))
 });
+
+gulp.task('watch',function () {
+   gulp.watch('app/styles/sass/*',['compass']);
+   gulp.watch('app/js/jsSrc/app.js',['scripts'])
+
+})
