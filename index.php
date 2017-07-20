@@ -1,7 +1,6 @@
 <?php get_header() ?>
 
 
-hello wordpress
+<?php bloginfo('title') ?>
 
-<?= get_template_directory_uri().'/src/scripts.min.js' ?>
 <?php get_footer() ?>
