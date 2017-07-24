@@ -57,4 +57,20 @@ function kh_reg_menus(){
 }
 add_action('init','kh_reg_menus');
 
+// register side bar Khalil
+
+
+function kh_register_sidebar() {
+    register_sidebar([
+       'name'=>__('Home Page SIdebar','theme-slug'),
+        'id' =>'sidebar-1',
+        'description' =>__('This will show widgets on homepage just'),
+        'before_widget' =>'<li id="%1$s" class="widget %2$s">',
+         'after-widget' => '</li>',
+        'before-title' =>'<h1 class="widget-title">',
+        'after-title' => '</h1>'
+
+    ]);
+}
+add_action('widgets_init','kh_register_sidebar');
 ?>
